@@ -9,12 +9,12 @@
 .tag-cloud {
     margin: 20px 0px;
     text-align: center;
+    vertical-align: center;
 }
 
 .tag {
-    margin: 2px 0px;
-    border-radius: 2em;
-    padding: 1px 8px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 .tag-0 {
