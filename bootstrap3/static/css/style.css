@@ -59,6 +59,8 @@ i {
 .gist .highlight {
     border: none;
     margin-bottom: 0;
+}
+.gist .gist-file .gist-data {
     font-size: 95%;
 }
 
