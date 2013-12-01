@@ -95,6 +95,11 @@ i {
     color: #990000;
 }
 
+.tag-cloud {
+    font-size: 150%;
+    vertical-align: middle;
+}
+
 .addthis_toolbox.addthis_32x32_style {
     font-size: 24px;
     line-height: 32px;

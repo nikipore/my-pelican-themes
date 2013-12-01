@@ -1,6 +1,6 @@
-<div class="tag-cloud">
+<div class="tag-cloud well well-sm">
     {% for tag in tag_cloud %}
-        <a class="badge tag tag-{{ tag.1 }}" role="button" href="{{ SITEURL }}/{{ tag.0.url }}">
+        <a class="tag tag-{{ tag.1 }}" role="button" href="{{ SITEURL }}/{{ tag.0.url }}">
             {{ tag.0 }}
         </a>
     {% endfor %}
