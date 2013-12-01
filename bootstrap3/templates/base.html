@@ -9,33 +9,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Open Graph tags -->
-    {% if USE_OPEN_GRAPH is not defined %}
-        {% set USE_OPEN_GRAPH = True %}
-    {% endif %}
-    {% if USE_OPEN_GRAPH %}
-        {% if OPEN_GRAPH_FB_APP_ID %}
-            <meta property="fb:app_id" content="{{ OPEN_GRAPH_FB_APP_ID }}"/>
-        {% endif %}
-        {% if article %}
-            <meta property="og:type" content="article"/>
-            <meta property="og:title" content="{{ article.title }}"/>
-            <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}"/>
-            <meta property="og:description" content="{{ article.summary|striptags }}"/>
-        {% elif page %}
-            <meta property="og:type" content="article"/>
-            <meta property="og:title" content="{{ page.title }}"/>
-            <meta property="og:url" content="{{ SITEURL }}/{{ page.url }}"/>
-        {% else %}
-            <meta property="og:type" content="website"/>
-            <meta property="og:title" content="{{ SITENAME }}"/>
-            <meta property="og:url" content="{{ SITEURL }}"/>
-            <meta property="og:description" content="{{ SITENAME }}"/>
-            {% if OPEN_GRAPH_IMAGE %}
-                <meta property="og:image" content="{{ SITEURL }}/static/{{ OPEN_GRAPH_IMAGE }}"/>
-            {% endif %}
-        {% endif %}
-    {% endif %}
+    {% include 'includes/opengraph.html' %}
+
     <!-- Bootstrap -->
     {% if BOOTSTRAP_THEME %}
         <link href="{{ SITEURL }}/theme/css/{{ BOOTSTRAP_THEME }}.bootstrap.min.css" type="text/css" rel="stylesheet"/>
@@ -45,6 +20,7 @@
     <link href="{{ SITEURL }}/theme/css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
     <link href="{{ SITEURL }}/theme/css/pygments.css" type="text/css" rel="stylesheet"/>
     <link href="{{ SITEURL }}/theme/css/style.css" type="text/css" rel="stylesheet"/>
+
     <!-- JavaScript plugins (requires jQuery) -->
     <script src="//code.jquery.com/jquery.min.js"></script>
 
@@ -77,7 +53,7 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="{{ SITEURL }}/theme/js/bootstrap.min.js" type="text/javascript"></script>
-{% include 'includes/git_embed.html' %}
+{% include 'includes/gistembed.html' %}
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
 <script src="{{ SITEURL }}/theme/js/respond.min.js"></script>

@@ -56,14 +56,6 @@ i {
     margin-bottom: 0.5em;
 }
 
-.gist .highlight {
-    border: none;
-    margin-bottom: 0;
-}
-.gist .gist-file .gist-data {
-    font-size: 95%;
-}
-
 .highlight pre,
 .highlighttable pre,
 .highlighttable .highlight {
@@ -85,6 +77,14 @@ i {
 }
 .highlighttable .linenos {
     border-right: 1px solid #ccc;
+}
+
+.gist .highlight {
+    border: none;
+    margin-bottom: 0;
+}
+.gist .gist-file .gist-data {
+    font-size: 95%;
 }
 
 #share a {
