@@ -42,11 +42,6 @@ i {
     margin-right: 5px;
 }
 
-.entry-content img {
-    max-width: 100%;
-    height: auto;
-}
-
 #categories ul, #tags ul {
     list-style: none;
     padding: 0;
@@ -58,32 +53,6 @@ i {
     border: 1px solid #ccc;
     padding: 6px 10px;
     border-radius: 3px;
-}
-
-figcaption {
-    background-color: #999999;
-    border-radius: 3px;
-    color: #fff;
-    font-size: 13px;
-    font-weight: normal;
-    line-height: 2em;
-    margin-bottom: 0;
-    position: relative;
-    text-align: center;
-}
-
-figcaption a {
-    color: inherit;
-    padding-left: 3em;
-    position: absolute;
-    right: 0.8em;
-    text-decoration: none;
-    z-index: 1;
-}
-
-figure.code figcaption a:hover {
-    color: #fff;
-    text-decoration: underline;
 }
 
 #share a {
