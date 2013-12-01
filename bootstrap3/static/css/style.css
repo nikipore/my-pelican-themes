@@ -48,11 +48,41 @@ i {
     margin-left: 0;
 }
 
-.highlight pre {
-    background-color: #f8f8f8;
+.highlight,
+.highlighttable {
     border: 1px solid #ccc;
-    padding: 6px 10px;
     border-radius: 3px;
+    padding: 0;
+    margin-bottom: 0.5em;
+}
+
+.gist .highlight {
+    border: none;
+    margin-bottom: 0;
+    font-size: 95%;
+}
+
+.highlight pre,
+.highlighttable pre,
+.highlighttable .highlight {
+    background-color: inherit;
+    border: none;
+}
+
+.highlight pre,
+.highlighttable pre {
+    padding: 6px 10px;
+}
+
+.highlighttable {
+    display: block;
+}
+
+.highlighttable .linenos pre {
+    color: rgba(0, 0,0, 0.3);
+}
+.highlighttable .linenos {
+    border-right: 1px solid #ccc;
 }
 
 #share a {

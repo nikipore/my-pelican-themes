@@ -5,11 +5,7 @@
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="{{ SITEURL }}/{{ article.url }}"
-                       rel="bookmark"
-                       title="Permalink to {{ article.title }}">
-                        {{ article.title }}
-                    </a>
+                    {{ article.title }}
                 </h1>
             </header>
             <div class="entry-content">
@@ -20,7 +16,6 @@
                     </div>
                 </div>
             </div>
-            <!-- /.entry-content -->
             {% include 'includes/addthis.html' %}
             {% include 'includes/comments.html' %}
         </article>
