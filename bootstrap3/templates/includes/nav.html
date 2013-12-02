@@ -1,9 +1,11 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="navbar-inner container">
     <div>
-    <a href="{{ SITEURL }}" class="navbar-brand">{{ SITENAME }}</a>
-    <p class="navbar-text visible-lg">{{ SITESUBTITLE }}</p>
-
+    <a href="{{ SITEURL }}" title="{{ SITESUBTITLE }}">
+        <img src="{{ SITEURL }}/images/brand.png" class="navbar-brand-img"/>
+        <span class="navbar-brand">{{ SITENAME }}</span>
+    </a>
+    
     <ul class="nav navbar-nav navbar-right">
         <li class="hidden-xs">
             <a title="toggle navigation" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
