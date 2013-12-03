@@ -40,7 +40,14 @@
         {% include 'includes/social.html' %}
     </ul>
     </div>
-    </div>
-    </div>
 
+    </div>
+    </div>
 </nav>
+
+<script type="text/javascript">
+$('.btn-navbar').click(function() {
+    $(this).find('i.icon-chevron-left, i.icon-chevron-right').toggleClass('icon-chevron-left icon-chevron-right');
+    $(this).find('i.icon-chevron-down, i.icon-chevron-up').toggleClass('icon-chevron-down icon-chevron-up');
+});
+</script>

@@ -18,14 +18,10 @@
 }
 
 .tag-0 {
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 .tag-1 {
-    font-size: 1.1em;
-}
-
-.tag-2 {
     font-size: 1.0em;
 }
 
@@ -33,8 +29,12 @@
     font-size: 0.9em;
 }
 
-.tag-4 {
+.tag-2 {
     font-size: 0.8em;
+}
+
+.tag-4 {
+    font-size: 0.7em;
 }
 
 i {
