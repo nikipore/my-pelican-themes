@@ -1,5 +1,5 @@
 <footer class="post-info">
-    <span class="published">{{ article.locale_date }}</span>
+    <span class="published"><time class="timeago" datetime="{{ article.date.strftime('%Y-%m-%dT%H:%M:%S%z') }}">{{ article.locale_date }}</time></span>
     <span class="article-info-separator">·</span>
     {# Uncomment if you want the author shown #}
     {#{% if article.author %}#}
