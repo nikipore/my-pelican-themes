@@ -3,7 +3,7 @@
         {% set TAG_LIST_SEPARATOR = "/" %}
     {% endif %}
 
-	{% for tag in article.tags %}
+	{% for tag in article.tags|sort %}
 		<a class="badge tag tag-4" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
 	    {% if not loop.last %}
 	        {{ TAG_LIST_SEPARATOR }}

@@ -1,5 +1,5 @@
 <div class="tag-cloud well well-sm">
-    {% for tag in tag_cloud %}
+    {% for tag in tag_cloud|sort %}
         <a class="tag tag-{{ tag.1 }}" role="button" href="{{ SITEURL }}/{{ tag.0.url }}">
             {{ tag.0 }}
         </a>
